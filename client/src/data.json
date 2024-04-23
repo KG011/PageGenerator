@@ -1,0 +1,27 @@
+{
+    "container": {
+        "width": 1000,
+        "height": 800
+    },
+    "blocks": [
+        
+    ],
+    "draging":true,
+    "example":[
+        { "top": 100, "left": 100, "zIndex": 1, "key": "text","props":{
+            "text":"",
+            "color":"",
+            "size":""
+        } },
+        { "top": 200, "left": 200, "zIndex": 1, "key": "button","props":{
+            "text":"",
+            "type":"",
+            "size":""
+        } },
+        { "top": 300, "left": 300, "zIndex": 1, "key": "input","props":{
+            
+        },"model":{
+        } }
+    ]
+}
+
