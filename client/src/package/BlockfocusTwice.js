@@ -26,7 +26,7 @@ export function BlockFocusTwice(focusData, lastSelectIndex,data) {
                 let lines={x:[],y:[]}
                 unfocus.forEach((block)=>{
                     const{top:ATop,left:ALeft,width:AWidth,height:AHeight}=block
-                    // 竖轴
+                    // 横轴
                     lines.y.push({showTop:ATop,top:ATop})
                     lines.y.push({showTop:ATop,top:ATop-BHeight})
                     lines.y.push({showTop:ATop,top:ATop-BHeight/2})
@@ -34,7 +34,7 @@ export function BlockFocusTwice(focusData, lastSelectIndex,data) {
                     lines.y.push({showTop:ATop+AHeight,top:ATop+AHeight-BHeight})
                     lines.y.push({showTop:ATop+AHeight,top:ATop+AHeight})
                     lines.y.push({showTop:ATop+AHeight,top:ATop+AHeight-BHeight/2})
-                    // 横轴
+                    // 竖轴
                     lines.x.push({showLeft:ALeft,left:ALeft})
                     lines.x.push({showLeft:ALeft,left:ALeft-BWidth})
                     lines.x.push({showLeft:ALeft,left:ALeft-BWidth/2})

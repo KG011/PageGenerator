@@ -29,8 +29,8 @@ const $router = useRouter();
 const loading = ref(false);
 const state = reactive({
     ruleForm: {
-        username: '',
-        password: '',
+        username: 'KG01',
+        password: '123456',
     }
 })
 const ruleFormRef = ref<FormInstance>()

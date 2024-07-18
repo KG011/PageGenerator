@@ -6,7 +6,7 @@ export function useCommand(data,focusData){
     const state={ //前进后退需要的指针
         current:-1,//前进后退需要的索引值
         queue:[],//存放所有的操作命令
-        commands:{},//操作命令和执行功能的映射
+        commands:{},//操作命令和执行功能的映射·
         commandArray:[],
         destoryArry:[]
     }
@@ -119,6 +119,7 @@ export function useCommand(data,focusData){
         name: 'updateBlock', 
         pushQueue: true,
         execute(newBlock, oldBlock) {
+            console.log(newBlock,oldBlock);
             let state = {
                 before: data.value.blocks,
                 after: (() => {
@@ -158,6 +159,7 @@ export function useCommand(data,focusData){
                 return data.value.blocks
             })()
             return{
+
                 redo(){
                     data.value={...data.value,blocks:after}
                 },

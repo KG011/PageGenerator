@@ -4,7 +4,7 @@ import Home from '@/package/Editor-home'
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
-        redirect: '/Home'
+        redirect: '/Login'
     },
     // {path:'/home',name:'HOME',component:()=> import("@/views/Home.vue")},
     {

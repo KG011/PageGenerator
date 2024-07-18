@@ -44,7 +44,7 @@ export default defineComponent({
             props.block.height = offsetHeight
             props.block.width = offsetWidth
         })
-        function aa(e) {
+        function rotate(e) {
             e.preventDefault()
             e.stopPropagation()
             const rect = proxy.$el.getBoundingClientRect()
@@ -82,7 +82,7 @@ export default defineComponent({
             })
             const { width, height } = component.resize || {}
             return <div class='editor-detail' style={!props.block.focus ? { transform: data.transform, ...containerStyle.value } : { transform: data.transform, ...RowStyle.value }} ref={blockRef}>
-                {props.block.focus && <span class='rotate icon-xuanzhuan' onMousedown={aa}></span>}
+                {props.block.focus && <span class='rotate icon-xuanzhuan' onMousedown={rotate}></span>}
                 {renderComponent}
                 {props.block.focus && (width || height) && <BlockResize
                     component={component}

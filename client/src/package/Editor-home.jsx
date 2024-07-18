@@ -157,8 +157,9 @@ export default defineComponent({
                 <div class="editor dark">
                     <div class="editor-left">
                         <div class="editor-left-head">
-                            <router-link class="editor-left-head-user" to='/Login'></router-link>
-                            <span>用户名</span>
+                            <div class="editor-left-head-user"></div>
+                            <span>{useStore.username}</span>
+                            {useStore.username?<router-link class="editor-left-head-layout" to='/Login'>退出登录</router-link>:''}
                         </div>
                         <div class="editor-left-content">
                             <div class="editor-left-top"><i class='icon-zujian'></i><span>组件区</span></div>
